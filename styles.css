@@ -510,6 +510,7 @@ footer {
     line-height: 1.6;
     position: relative;
     padding-left: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .conference-item ul li:before {
@@ -518,6 +519,7 @@ footer {
     position: absolute;
     left: 0;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .conference-item ul li:last-child {
@@ -598,5 +600,6 @@ footer {
     .conference-item ul li {
         margin-bottom: 1rem;
         padding-left: 1.2rem;
+        font-size: 1rem;
     }
 } 
