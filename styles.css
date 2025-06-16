@@ -367,7 +367,7 @@ section h2 {
     font-size: 1.2rem;
 }
 
-/* Project List */
+/* Project List and Conference List (shared styles) */
 .project-list {
     background: #fff;
     padding: 2.5rem;
@@ -387,6 +387,7 @@ section h2 {
     line-height: 1.6;
     position: relative;
     padding-left: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .project-item ul li:before {
@@ -395,6 +396,7 @@ section h2 {
     position: absolute;
     left: 0;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .project-item ul li:last-child {
@@ -586,6 +588,7 @@ footer {
     .project-item ul li {
         margin-bottom: 1.2rem;
         padding-left: 1.2rem;
+        font-size: 1rem;
     }
 
     .publication-item li {
