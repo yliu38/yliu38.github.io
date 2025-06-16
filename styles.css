@@ -131,6 +131,22 @@ section h2 {
     font-size: 1.5rem;
 }
 
+.experience-item .institution,
+.experience-item .department {
+    color: #34495e;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item .thesis {
+    color: #2c3e50;
+    font-style: italic;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
 .date {
     color: #7f8c8d;
     font-style: italic;
@@ -168,50 +184,101 @@ section h2 {
     font-size: 1.5rem;
 }
 
+.education-item .institution {
+    color: #34495e;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
 .education-item .date {
     color: #7f8c8d;
     font-style: italic;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
 }
 
-.education-item p {
+.education-item .location {
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+}
+
+.education-item .coursework,
+.education-item .honors {
+    margin-top: 1.5rem;
+}
+
+.education-item h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.education-item ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.education-item ul li {
+    margin-bottom: 0.5rem;
     color: #34495e;
-    line-height: 1.6;
+    position: relative;
+}
+
+.education-item ul li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: -1.5rem;
 }
 
 /* Projects Section */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+.section-subtitle {
+    color: #2c3e50;
+    margin: 3rem 0 2rem;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
-.project-card {
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-item {
     background: #fff;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
+    transition: transform 0.3s ease;
 }
 
-.project-card:hover {
+.project-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.project-card h3 {
+.project-item h4 {
     color: #2c3e50;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
-.project-card p {
+.project-item ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.project-item ul li {
+    margin-bottom: 0.8rem;
     color: #34495e;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
+    position: relative;
+}
+
+.project-item ul li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: -1.5rem;
 }
 
 /* Skills Section */
@@ -260,6 +327,49 @@ section h2 {
     font-size: 1.2rem;
 }
 
+/* Publications Section */
+.publication-list {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.publication-item h3 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.publication-item ul {
+    list-style: none;
+}
+
+.publication-item li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.publication-item li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.publication-item .title {
+    display: block;
+    color: #2c3e50;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.publication-item .journal {
+    display: block;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
 /* Contact Section */
 #contact {
     text-align: center;
@@ -271,6 +381,7 @@ section h2 {
     justify-content: center;
     gap: 1.5rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .button {
@@ -319,6 +430,16 @@ footer {
 
     .subtitle-small {
         font-size: 1rem;
+    }
+
+    .education-item,
+    .experience-item,
+    .project-item {
+        padding: 1.5rem;
+    }
+
+    .publication-list {
+        padding: 1.5rem;
     }
 
     .contact-links {
