@@ -151,30 +151,29 @@
             <div class="container">
                 <h2>Professional Experience</h2>
                 <div class="experience-item">
-                    <h3>Graduate Research Assistant</h3>
-                    <p class="institution">University of Texas MD Anderson Cancer Center</p>
-                    <p class="department">Department of Translational Molecular Pathology</p>
-                    <p class="date">August 2021 - Present</p>
-                    <p class="location">Houston, US</p>
-                    <p class="thesis">Dissertation topic: Enhanced Prediction through Graph Neural Networks with Network-Based Feature Engineering</p>
+                    <h3>Research Scientist</h3>
+                    <div class="institution">The University of Texas MD Anderson Cancer Center</div>
+                    <div class="department">Department of Biostatistics</div>
+                    <div class="date">2023 - Present</div>
                     <ul>
-                        <li>Developing a novel deep learning method (clustering + GCN/GAT) for classification problems using gene expression data on Neo4j platform</li>
-                        <li>Creating a biologically meaningful, network-based feature selection method for gene expression data; successfully secured FY24 Glioblastoma Moon Shot funding of $519,257 with preliminary results</li>
-                        <li>Establishing a workflow for biomarker discovery related to glioma survival through graph networks and algorithms</li>
-                        <li>Conducting single-cell data analysis and developing tools for cell type annotation</li>
+                        <li>Developed a deep learning framework integrating network-based feature engineering and graph neural networks (GNNs) for cancer phenotype classification and biomarker discovery using gene expression data; supported by a $519K Moon Shot-funded knowledge graph approach (<a href="https://doi.org/10.1101/2025.04.28.651033" target="_blank">doi:10.1101/2025.04.28.651033</a>)</li>
+                        <li>Designed a network penalized method for biomarker discovery for survival analysis (<a href="https://doi.org/10.1101/2025.04.28.651033" target="_blank">doi:10.1101/2025.04.28.651033</a>)</li>
+                        <li>Enhanced ICD-10 code prediction from clinical notes by leveraging data-derived knowledge graphs and fine-tuned lightweight large language models (LLMs)</li>
+                        <li>Built multimodal transformer models for segmentation of Organ-at-Risk (OAR) regions using paired MRI and CT images (<a href="https://github.com/yliu38/MultimoImage" target="_blank">GitHub Repository</a>)</li>
+                        <li>Analyzed single-cell and high-throughput data, including data integration, cell-type annotation, trajectory inference, ATAC-seq, RNA-seq, protein arrays, and CRISPR screens (<a href="https://academic.oup.com/neuro-oncology/article/26/Supplement_8/viii13/7889618" target="_blank">Publication 1</a>, <a href="https://academic.oup.com/neuro-oncology/article/26/Supplement_8/viii314/7890500" target="_blank">Publication 2</a>)</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
                     <h3>Graduate Research Assistant</h3>
-                    <p class="institution">University of Texas MD Anderson Cancer Center</p>
-                    <p class="department">Department of Gastrointestinal Medical Oncology</p>
-                    <p class="date">January 2020 - August 2021</p>
-                    <p class="location">Houston, US</p>
+                    <div class="institution">The University of Texas MD Anderson Cancer Center</div>
+                    <div class="department">Department of Biostatistics</div>
+                    <div class="date">2020 - 2023</div>
                     <ul>
-                        <li>Developed a semi-supervised machine learning approach to annotate unclassified mutations, offering evidence to guide therapy selection for patients with atypical BRAF mutations</li>
-                        <li>Identified therapeutic targets for colorectal cancer patients with atypical BRAF mutation</li>
-                        <li>Designed pipelines and conducted data analyses for high-throughput data such as RNA-seq, Reverse Phase Protein Array, drug response profiling, and CRISPR knockout data</li>
+                        <li>Developed and implemented statistical methods for analyzing high-dimensional genomic data</li>
+                        <li>Collaborated with clinical researchers to design and analyze clinical trials</li>
+                        <li>Created interactive data visualization tools for clinical decision support</li>
+                        <li>Mentored junior researchers and contributed to grant applications</li>
                     </ul>
                 </div>
 
@@ -219,28 +218,42 @@
                     </div>
                 </div>
 
-                <h3 class="section-subtitle">Selected Course Projects</h3>
-                <div class="project-list">
-                    <div class="project-item">
-                        <h4>Microsatellite Status Prediction</h4>
-                        <ul>
-                            <li>Utilized over 192,000 image patches from histological images to predict microsatellite status in colorectal cancer patients</li>
-                            <li>Applied three deep learning models (ResNet18, VGG19, VGG19bn), achieving an AUC of 0.69</li>
-                        </ul>
+                <h2 class="section-title">Selected Course Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>DegreeAFT</h3>
+                        <p>Developed a novel survival analysis method for time-to-event data with competing risks, incorporating degree information from network structures.</p>
+                        <div class="project-details">
+                            <span class="tech-stack">R, Survival Analysis, Network Analysis</span>
+                            <a href="https://github.com/yliu38/DegreeAFT" target="_blank" class="project-link">View Project</a>
+                        </div>
                     </div>
-                    <div class="project-item">
-                        <h4>Meta-analysis of COVID-19 Mortality Rate</h4>
-                        <ul>
-                            <li>Applied binomial-beta Bayesian hierarchical model and mixed-effects model for analysis</li>
-                            <li>Compared estimated mortality rates and lengths of confidence/credible intervals</li>
-                        </ul>
+
+                    <div class="project-card">
+                        <h3>Multimodal Medical Image Segmentation</h3>
+                        <p>Implemented a transformer-based model for automatic segmentation of organs at risk using paired CT and MRI scans.</p>
+                        <div class="project-details">
+                            <span class="tech-stack">Python, PyTorch, Medical Imaging</span>
+                            <a href="https://github.com/yliu38/MultimoImage" target="_blank" class="project-link">View Project</a>
+                        </div>
                     </div>
-                    <div class="project-item">
-                        <h4>Batch-effect Correction for Single-cell RNA Sequencing</h4>
-                        <ul>
-                            <li>Evaluated seven methods for batch correction</li>
-                            <li>Integrated two independent mouse cell datasets</li>
-                        </ul>
+
+                    <div class="project-card">
+                        <h3>Clinical Text Analysis</h3>
+                        <p>Developed a knowledge graph-enhanced LLM system for automated ICD-10 code prediction from clinical notes.</p>
+                        <div class="project-details">
+                            <span class="tech-stack">Python, NLP, Knowledge Graphs</span>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Single-Cell Analysis Pipeline</h3>
+                        <p>Created an integrated workflow for analyzing single-cell RNA-seq and ATAC-seq data with trajectory inference.</p>
+                        <div class="project-details">
+                            <span class="tech-stack">R, Python, Bioinformatics</span>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
