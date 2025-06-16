@@ -490,6 +490,40 @@ footer {
     padding: 2rem 0;
 }
 
+/* Conferences Section */
+.conference-list {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+}
+
+.conference-item ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.conference-item ul li {
+    margin-bottom: 1.2rem;
+    color: #34495e;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.conference-item ul li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.conference-item ul li:last-child {
+    margin-bottom: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
@@ -555,5 +589,14 @@ footer {
     .publication-item li {
         margin-bottom: 1.5rem;
         padding-bottom: 1.5rem;
+    }
+
+    .conference-list {
+        padding: 1.5rem;
+    }
+
+    .conference-item ul li {
+        margin-bottom: 1rem;
+        padding-left: 1.2rem;
     }
 } 
